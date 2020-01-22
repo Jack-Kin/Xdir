@@ -1,5 +1,13 @@
 package runner
 
+/*
+	演示使用通道通信、同步等待，监控程序
+	拓展：
+		1. 交给定时任务去执行，比如cron
+			E.g: https://www.jianshu.com/p/e629d637bf4c
+		2. 更高效率的并发，更多灵活的控制程序的生命周期，更高效的监控等
+*/
+
 import (
 	"errors"
 	"os"
