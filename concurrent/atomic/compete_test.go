@@ -7,7 +7,7 @@ import (
 	"time"
 )
 
-func Test(t *testing.T) {
+func TestAtomic(t *testing.T) {
 	runtime.GOMAXPROCS(4)
 	wgs.Add(2)
 	t1 := time.Now()

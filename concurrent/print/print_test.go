@@ -7,7 +7,7 @@ import (
 )
 
 
-func Test(t *testing.T) {
+func TestPrint(t *testing.T) {
 	//这里设P的数量， 改成1 2 3 4 5试试
 	runtime.GOMAXPROCS(4)
 

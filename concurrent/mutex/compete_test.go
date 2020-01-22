@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func Test(t *testing.T) {
+func TestMutex(t *testing.T) {
 	wgs.Add(2)
 
 	go incCounterMutex()

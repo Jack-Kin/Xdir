@@ -23,14 +23,17 @@ func main() {
 
 	wg.Add(numberGoroutines)
 
+	// 开工人进程
 	for gr := 1; gr <= numberGoroutines; gr++ {
 		go worker(tasks, gr)
 	}
 
+	// 传送任务
 	for post := 1; post <= taskLoad; post++ {
 		tasks <- fmt.Sprintf("Task : %d", post)
 	}
 
+	// 任务传完了把通道关了
 	// 通道关闭之后，goroutine可以从通道接收数据，但是不能发送数据
 	// 通道关闭理解为数据只进不出
 	close(tasks)

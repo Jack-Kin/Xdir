@@ -41,6 +41,8 @@ func Runner(baton chan int) {
 
 	if runner == 4 {
 		fmt.Printf("Runner %d finished, Race Over\n", runner)
+		// 这里不关也不会报错
+		close(baton)
 		wg.Done()
 		return
 	}
