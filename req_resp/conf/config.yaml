@@ -1,0 +1,5 @@
+name:             6030&6131
+stockdict_url:    http://61.129.249.241:8880/stockdict/full?fmt=j&ver=0&mid=0 #最后一个字段是请求的market市场代码
+#app_server_addr:  43.254.147.74:80
+app_server_addr:  101.89.224.35:1861
+#app_server_addr:  61.129.129.55:1861
